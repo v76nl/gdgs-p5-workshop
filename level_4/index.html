@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#level-4" class="md-skip">
+        <a href="#level-4-" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -613,7 +613,7 @@
 
 
 
-<h1 id="level-4">Level 4</h1>
+<h1 id="level-4-">Level 4 - 変数</h1>
 <ul>
 <li>今、円はマウスに追従するが、これが勝手に動くようにしたい</li>
 <li>変数を使ってみよう<ul>
@@ -643,13 +643,13 @@
 </ul>
 </li>
 <li>
-<p>でもcircle(200, 200, ...) でよくない？</p>
+<p>でも <code>circle(200, 200, ...)</code> でよくない？</p>
 <ul>
 <li>パラメータを外に置くことでプログラムが見やすくなったり、管理しやすくなったりする</li>
 </ul>
 </li>
 <li>
-<p>で、どう動かすの？</p>
+<p>それで、円をどう動かすの？</p>
 <ul>
 <li><code>y = 0</code> にしたあと、 <code>function draw() {</code> の下に <code>y = y + 3;</code> と書く
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>let x = 200;
@@ -670,7 +670,7 @@
 <li>円が勝手に下に行くはず</li>
 </ul>
 </li>
-<li>最初はyが0だが、draw()が実行されるたびに+3されていく<ul>
+<li>最初はyが0だが、draw()が実行されるたびに +3 されていく<ul>
 <li>座標についてはLevel 1、draw()の仕組みについてはLevel 2を参照</li>
 </ul>
 </li>
@@ -679,8 +679,8 @@
 <li>
 <p><code>y = y + 3</code> という式は気持ち悪い？</p>
 <ul>
-<li>多くのプログラミング言語において、<code>=</code>は等しいことではなく「代入」を示す</li>
-<li>変数yという箱に対し、yの中身に3を足したものを入れなおす</li>
+<li>多くのプログラミング言語において、<code>=</code> は等しいことではなく「代入」を示す</li>
+<li>変数yという箱に対し、yの中身に3を足したものを入れなおす、ということ</li>
 </ul>
 </li>
 </ul>
