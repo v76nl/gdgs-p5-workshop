@@ -1,0 +1,20 @@
+site_name: p5.js workshop
+
+theme:
+    name: material
+    language: ja
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+
+nav:
+    - はじめに: index.md
+    - intro: intro.md
+    - Level 0: level_0.md
+
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
