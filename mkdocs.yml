@@ -11,14 +11,14 @@ theme:
         - navigation.footer
 
 nav:
-    - はじめに: index.md
-    - intro: intro.md
-    - Level 0: level_0.md
-    - Level 1: level_1.md
-    - Level 2: level_2.md
-    - Level 3: level_3.md
-    - Level 4: level_4.md
-    - Level 5: level_5.md
+    - トップページ: index.md
+    - 導入: intro.md
+    - Level 0 - p5.jsに触れてみる: level_0.md
+    - Level 1 - circle関数: level_1.md
+    - Level 2 - フレーム: level_2.md
+    - Level 3 - random関数とRGB: level_3.md
+    - Level 4 - 変数: level_4.md
+    - Level 5 - if文: level_5.md
 
 markdown_extensions:
     - pymdownx.highlight:
