@@ -1,4 +1,4 @@
-# Level 1
+# Level 1 - circle関数
 
 - `circle()` を `background()` の下に書いてみよう
     - `circle()` は円を描く指令

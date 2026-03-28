@@ -1,4 +1,4 @@
-# Level 3
+# Level 3 - random関数とRGB
 
 - circleの直径を `random(0, 50)` にしてみよう
   ```p5.js hl_lines="7"
