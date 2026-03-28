@@ -14,7 +14,8 @@
     circle(mouseX, mouseY, 50)
   }
   ```
-  - 円がカーソルに追従する
+     - 円がカーソルに追従する
+
 - 再度background関数をコメントアウトしよう
   ```p5.js hl_lines="6"
   function setup() {
@@ -26,4 +27,4 @@
     circle(mouseX, mouseY, 50)
   }
   ```
-  - マウスカーソルを動かすと、たくさん円が表示される
+     - マウスカーソルを動かすと、たくさん円が表示される
