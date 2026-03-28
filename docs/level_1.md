@@ -3,7 +3,7 @@
     - 書き方は circle(x座標, y座標, 直径)
     - たとえば circle(100, 150, 50)
     - 値を変えて遊んでみよう
-```p5.js
+```p5.js hl_lines="7"
 function setup() {
   createCanvas(400, 400);
 }
@@ -15,7 +15,7 @@ function draw() {
 ```
 - circle() の中に `mouseX` と `mouseY` を入れてみよう
     - circle(mouseX, mouseY, 50)
-```p5.js
+```p5.js hl_lines="7"
 function setup() {
   createCanvas(400, 400);
 }
