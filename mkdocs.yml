@@ -14,6 +14,8 @@ nav:
     - intro: intro.md
     - Level 0: level_0.md
     - Level 1: level_1.md
+    - Level 2: level_2.md
+    - Level 3: level_3.md
 
 markdown_extensions:
     - pymdownx.highlight:
