@@ -19,6 +19,7 @@ nav:
     - Level 3 - random関数とRGB: level_3.md
     - Level 4 - 変数: level_4.md
     - Level 5 - if文: level_5.md
+    - EX - 余裕があれば: EX.md
 
 markdown_extensions:
     - pymdownx.highlight:
