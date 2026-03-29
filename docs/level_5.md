@@ -25,17 +25,17 @@
         let y = 0;
 
         function setup() {
-        createCanvas(400, 400);
+            createCanvas(400, 400);
         }
 
         function draw() {
-        y = y + 3;
-        if (y > 400) {
-            y = 0;
-        }
-        // background(220);
-        fill(255, 0, 0)
-        circle(x, y, random(0, 50))
+            y = y + 3;
+            if (y > 400) {
+                y = 0;
+            }
+            // background(220);
+            fill(255, 0, 0)
+            circle(x, y, random(0, 50))
         }
         ```
         - ちなみに、background() は有効化してもOK
