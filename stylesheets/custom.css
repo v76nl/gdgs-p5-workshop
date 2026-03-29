@@ -1,0 +1,10 @@
+/* 見出しのデザインを上書きする */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+    font-family: "Helvetica Neue", sans-serif, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
+    font-weight: 700;
+}
