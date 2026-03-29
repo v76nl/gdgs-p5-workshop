@@ -27,6 +27,9 @@ theme:
         - content.code.copy
         - navigation.footer
         - navigation.top
+        
+extra_css:
+    - stylesheets/custom.css
 
 nav:
     - トップページ: index.md
