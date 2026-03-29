@@ -613,7 +613,7 @@
 
 <h1 id="level-5-if">Level 5 - if文</h1>
 <ul>
-<li>一つ前のLevel 4では、円を下げることに成功したが、下がったら行ったっきりになってしまった</li>
+<li>Level 4では、円を下げることに成功したが、下がるだけでエリアから出て行ってしまった</li>
 <li>
 <p>描画エリア内に戻すにはどうすればいいだろう？ </p>
 <ul>
@@ -644,17 +644,17 @@
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>let y = 0;
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>function setup() {
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>createCanvas(400, 400);
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    createCanvas(400, 400);
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>}
 <a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>function draw() {
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>y = y + 3;
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="hll">if (y &gt; 400) {
-</span><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="hll">    y = 0;
-</span><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="hll">}
-</span><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>// background(220);
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>fill(255, 0, 0)
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>circle(x, y, random(0, 50))
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    y = y + 3;
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="hll">    if (y &gt; 400) {
+</span><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="hll">        y = 0;
+</span><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="hll">    }
+</span><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    // background(220);
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    fill(255, 0, 0)
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    circle(x, y, random(0, 50))
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>}
 </code></pre></div><ul>
 <li>ちなみに、background() は有効化してもOK</li>
