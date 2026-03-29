@@ -3,12 +3,30 @@ site_name: p5.js workshop
 theme:
     name: material
     language: ja
+
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: pink
+          accent: pink
+          toggle:
+              icon: material/brightness-7
+              name: ダークモードに切り替え
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: pink
+          accent: pink
+          toggle:
+              icon: material/brightness-4
+              name: ライトモードに切り替え
+
     features:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
         - content.code.copy
         - navigation.footer
+        - navigation.top
 
 nav:
     - トップページ: index.md
