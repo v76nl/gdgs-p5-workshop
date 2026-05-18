@@ -1,6 +1,6 @@
 # GDGs/GDGoC Chuo p5.js workshop
 
-2026年3月29日\
+2026年3月29日, 5月19日, 5月24日\
 [v76nl.github.io/gdgs-p5-workshop](https://v76nl.github.io/gdgs-p5-workshop/)
 
 ## Routine
