@@ -2,6 +2,8 @@
 
 - どうでしたか？
     - 簡単だった / 難しかった
+- p5.jsは、書いたプログラムが反映される様子がわかりやすく、プログラミング入門にぴったり
+- Web Editorでアカウントを作成するとプログラムが保存できる
 - OpenProcessing などのサイトで作品の例が見られる オススメ！  
    [Discover - OpenProcessing](https://openprocessing.org/discover/#/generativeart)
     - 作品のページを開いて、上の `</>` ボタンからプログラムも見られる
@@ -15,7 +17,9 @@
         - [Far East (shooter game) - OpenProcessing](https://openprocessing.org/@u67512/769137)
     - ただしp5.jsはゲームを作るのに向いているわけではない
 
-- p5.jsの公式サイトの "Reference" に使えるプログラムがすべて載っている
-
+- p5.jsの公式サイトの "Reference" に使えるプログラムがすべて載っている  
     [Reference](https://p5js.org/reference/)  
     - 「そんなことできるんだ！」という驚きがあるかも
+
+- ワークショップが終わった後も、自分でp5.jsを遊んでもらえたらすごく嬉しいです！
+    - この資料も参考にしつつ……
