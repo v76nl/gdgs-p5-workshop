@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../level_5/">
+        <link rel="prev" href="../outro/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>EX - 余裕があれば - p5.js workshop</title>
+        <title>EX - やる気と時間があれば - p5.js workshop</title>
       
     
     
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EX - 余裕があれば
+              EX - やる気と時間があれば
             
           </span>
         </div>
@@ -232,7 +232,7 @@
   
     
   
-  導入
+  はじめに
 
       </a>
     </li>
@@ -357,6 +357,25 @@
   
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../outro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  おわりに
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
     
   
   
@@ -367,7 +386,7 @@
   
     
   
-  EX - 余裕があれば
+  EX - やる気と時間があれば
 
       </a>
     </li>
@@ -448,7 +467,7 @@
   <span class="md-ellipsis">
     
   
-    導入
+    はじめに
   
 
     
@@ -627,6 +646,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../outro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    おわりに
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -646,7 +692,7 @@
   <span class="md-ellipsis">
     
   
-    EX - 余裕があれば
+    EX - やる気と時間があれば
   
 
     
@@ -664,7 +710,7 @@
   <span class="md-ellipsis">
     
   
-    EX - 余裕があれば
+    EX - やる気と時間があれば
   
 
     
@@ -793,6 +839,17 @@
     <span class="md-ellipsis">
       
         Object
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        おまけ
       
     </span>
   </a>
@@ -943,6 +1000,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        おまけ
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1009,14 +1077,14 @@
 </code></pre></div>
 <h2 id="for-">for文 - 繰り返し</h2>
 <ul>
-<li>for文とは</li>
+<li>
+<p>for文とは</p>
+<ul>
 <li>
 <p>このような書き方のこと</p>
-<div class="highlight"><pre><span></span><code>```
-for (初期化式; 条件式; 変化式) {
-    繰り返しやりたい処理
-}
-```
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>for (初期化式; 条件式; 変化式) {
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    繰り返しやりたい処理
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>}
 </code></pre></div>
 </li>
 <li>
@@ -1028,15 +1096,14 @@ for (初期化式; 条件式; 変化式) {
 <li>変化式は、処理が1回終わるたびに実行され、変数の値を更新する</li>
 </ul>
 </li>
-<li>
-<p>例</p>
+<li>例</li>
+</ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>for (let i = 0; i &lt; 3; i++) {
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    circle(x[i], y, random(0, 50));
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>}
 </code></pre></div>
-<ul>
-<li>難しいので、書くことで慣れよう</li>
-</ul>
+<div class="highlight"><pre><span></span><code>- 難しいので、書くことで慣れよう
+</code></pre></div>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>let x = [100, 200, 300];
@@ -1060,9 +1127,11 @@ for (初期化式; 条件式; 変化式) {
 </code></pre></div>
 <h2 id="hsb-rgb">HSB - RGBとは異なる色表現</h2>
 <ul>
-<li>HSB: Hue, Saturation, Brightness</li>
+<li>HSB: Hue, Saturation, Brightness<ul>
 <li>つまり、色合い、鮮やかさ、明るさの3つで色を指定する<ul>
 <li>三原色の混合で色を指定するRGBとは異なるやり方</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -1070,9 +1139,9 @@ for (初期化式; 条件式; 変化式) {
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>colorMode(HSB, 1, 1, 1);
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>fill(0.2, 1, 1);
 </code></pre></div>
-</li>
-<li>
-<p>HSBにするとRGBは使えなくなるので注意</p>
+<ul>
+<li>HSBにするとRGBは使えなくなるので注意</li>
+</ul>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>let frames = 0;
@@ -1220,6 +1289,37 @@ for (初期化式; 条件式; 変化式) {
 <a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>}
 </code></pre></div>
 <h2 id="object">Object</h2>
+<p>-</p>
+<h2 id="_2">おまけ</h2>
+<ul>
+<li><a href="https://v76nl.github.io/gdgs-p5-workshop/level_0/">Level 1</a> の画像のプログラム<br />
+ここからでも → <a href="https://editor.p5js.org/v76nl/sketches/2BarazSA3">p5.js Web Editor | p5.js Lesson 2026 March</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>// 
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>let x = [100, 200, 300];
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>let y = 0;
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>function setup() {
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>  createCanvas(400, 400);
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>}
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>function draw() {
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>  y = y + 3;
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>  if (y &gt; 400) {
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    y = 0;
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>  }
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>  background(0, 0, 0, 10);
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>  fill(random(0, 255), 200, 200);
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>  stroke(200, 100, 100);
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>  strokeWeight(5)
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>  for (let i = 0; i &lt; 3; i++){
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>    circle(x[i], y, random(0, 50));
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>  }
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>}
+</code></pre></div>
 
 
 
@@ -1255,7 +1355,7 @@ for (初期化式; 条件式; 変化式) {
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../level_5/" class="md-footer__link md-footer__link--prev" aria-label="前: Level 5 - if文">
+          <a href="../outro/" class="md-footer__link md-footer__link--prev" aria-label="前: おわりに">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1265,7 +1365,7 @@ for (初期化式; 条件式; 変化式) {
                 前
               </span>
               <div class="md-ellipsis">
-                Level 5 - if文
+                おわりに
               </div>
             </div>
           </a>
