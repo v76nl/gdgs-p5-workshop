@@ -2,6 +2,9 @@
 
 - setup関数は再生ボタンを押したとき1回だけ実行される
 - draw関数はその後1秒間に60回の速度で実行され続ける
+
+  ![フレームのイメージ](images/frames.png)
+
 - 一度、background()の前の `//` を消して、background関数を有効化しよう
   ```p5.js hl_lines="6"
   function setup() {
