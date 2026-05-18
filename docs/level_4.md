@@ -3,7 +3,7 @@
 - 今、円はマウスに追従するが、これが勝手に動くようにしたい
 - 変数を使ってみよう
     - 今までの `mouseX` も変数
-    - 変数を自分で定義してみる
+    - 変数を自分で作ってみる (定義)
 - 一番上に 
     ```
     let x = 200;
@@ -41,14 +41,14 @@
         let y = 0;
 
         function setup() {
-        createCanvas(400, 400);
+            createCanvas(400, 400);
         }
 
         function draw() {
-        y = y + 3;
-        // background(220);
-        fill(255, 0, 0)
-        circle(x, y, random(0, 50))
+            y = y + 3;
+            // background(220);
+            fill(255, 0, 0)
+            circle(x, y, random(0, 50))
         }
         ```
     - どうなっただろうか？
