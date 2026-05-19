@@ -22,7 +22,7 @@
 - `circle()` の括弧の中の値を変えて遊んでみよう
     - 特に2つめの数字
     - 注意: p5.jsでの座標系
-        - xは数学と同じく右方向が + だが、**yは逆**で下方向が + 
+        - xは数学と同じく右方向が + だが、**yは逆**で下方向が +
             ![座標のイメージ](images/zahyokei.png)
 
 - `circle()` の括弧の中に `mouseX` と `mouseY` を入れてみよう
@@ -35,7 +35,7 @@
 
         function draw() {
             background(220);
-            circle(mouseX, mouseY, 50)
+            circle(mouseX, mouseY, 50);
         }
         ```
 

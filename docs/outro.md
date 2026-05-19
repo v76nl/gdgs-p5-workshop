@@ -6,7 +6,7 @@
 - Web Editorでアカウントを作成するとプログラムが保存できる
 - OpenProcessing などのサイトで作品の例が見られる オススメ！  
    [Discover - OpenProcessing](https://openprocessing.org/discover/#/generativeart)
-    - 作品のページを開いて、上の `</>` ボタンからプログラムも見られる
+    - 作品のページを開き、上の `</>` ボタンを押すと、作品がどのようなプログラムで作られているか見られる
 - ゲームも作れる
     - 例  
         - [p5.js Web Editor | shooter](https://editor.p5js.org/_SIDDHU_/sketches/epGClQAh0)
