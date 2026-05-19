@@ -26,6 +26,7 @@
             ![座標のイメージ](images/zahyokei.png)
 
 - `circle()` の括弧の中に `mouseX` と `mouseY` を入れてみよう
+    - スペルと大文字・小文字に注意
     - `circle(mouseX, mouseY, 50)`
 
         ```p5.js hl_lines="7"

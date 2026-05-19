@@ -1,10 +1,11 @@
 # おわりに
 
 - どうでしたか？
+    - 楽しめた？
     - 簡単だった / 難しかった
 - p5.jsは、書いたプログラムが反映される様子がわかりやすく、プログラミング入門にぴったり
 - Web Editorでアカウントを作成するとプログラムが保存できる
-- OpenProcessing などのサイトで作品の例が見られる オススメ！  
+- OpenProcessing などのサイトで作品の例が見られる **オススメ！**  
    [Discover - OpenProcessing](https://openprocessing.org/discover/#/generativeart)
     - 作品のページを開き、上の `</>` ボタンを押すと、作品がどのようなプログラムで作られているか見られる
 - ゲームも作れる
