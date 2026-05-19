@@ -43,6 +43,7 @@ nav:
     - Level 5 - if文: level_5.md
     - おわりに: outro.md
     - EX - やる気と時間があれば: EX.md
+    - おまけ - 間違えやすいところ: ambiguous.md
 
 markdown_extensions:
     - pymdownx.highlight:
