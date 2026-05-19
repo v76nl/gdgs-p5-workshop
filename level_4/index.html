@@ -802,9 +802,11 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let x = 200;
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>let y = 200;
 </code></pre></div>
-<p>と書いてみる
-- circleの中の1つめ、2つめを<code>x, y</code>にしてみる
-※変数の名前と同じ小文字である必要があるはず</p>
+<p>と書いてみる</p>
+</li>
+<li>
+<p>circleの中の1つめ、2つめを<code>x, y</code>にしてみる<br />
+    ※変数の名前と同じ小文字でなければいけない</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="hll">let x = 200;
 </span><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="hll">let y = 200;
 </span><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -815,8 +817,8 @@
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>function draw() {
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  // background(220);
 <a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  fill(255, 0, 0);
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  circle(x, y, random(0, 50));
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>}
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="hll">  circle(x, y, random(0, 50));
+</span><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>}
 </code></pre></div>
 <ul>
 <li>とりあえず中心に円を表示することに成功！</li>
@@ -856,7 +858,7 @@
 </ul>
 </li>
 <li>最初はyが0だが、<code>draw()</code> が実行されるたびに +3 されていく<ul>
-<li>座標についてはLevel 1、draw関数の仕組みについてはLevel 2を参照</li>
+<li>座標については <a href="https://v76nl.github.io/gdgs-p5-workshop/level_1/">Level 1</a>、draw関数の仕組みについては <a href="https://v76nl.github.io/gdgs-p5-workshop/level_2/">Level 2</a> を参照</li>
 </ul>
 </li>
 </ul>
