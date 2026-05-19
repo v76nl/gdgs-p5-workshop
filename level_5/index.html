@@ -747,7 +747,7 @@
 <ul>
 <li>Level 4では、円を下げることに成功したが、下がるだけでエリアから出て行ってしまった</li>
 <li>
-<p>描画エリア内に戻すにはどうすればいいだろう？ </p>
+<p>描画エリア内に戻すにはどうすればいいだろう？</p>
 <ul>
 <li>if文の出番</li>
 </ul>
@@ -755,24 +755,34 @@
 <li>
 <p>if文とは</p>
 <ul>
-<li>このような書き方のこと
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>if (条件) {
+<li>
+<p>このような書き方のこと</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>if (条件) {
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    やりたい処理
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>}
-</code></pre></div></li>
-<li>条件に当てはまるときだけ、処理を行うことができる</li>
+</code></pre></div>
+</li>
+<li>
+<p>条件に当てはまるときだけ、処理を行うことができる</p>
+</li>
 </ul>
 </li>
 <li>
 <p>実際に書いてみる</p>
 <ul>
-<li>このようなif文を足して、動かしてみよう
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>if (y &gt; 400) {
+<li>
+<p>このようなif文を足して、動かしてみよう</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>if (y &gt; 400) {
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    y = 0;
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}
-</code></pre></div></li>
-<li>プログラム全体
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let x = 200;
+</code></pre></div>
+<ul>
+<li><code>y &gt; 400</code> は「yが400より大きいか」の意味 (詳細は後述)<ul>
+<li>プログラム全体</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let x = 200;
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>let y = 0;
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>function setup() {
@@ -788,7 +798,8 @@
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    fill(255, 0, 0)
 <a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    circle(x, y, random(0, 50))
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>}
-</code></pre></div><ul>
+</code></pre></div>
+<ul>
 <li>ちなみに、background() は有効化してもOK</li>
 <li>下の辺に触れたら、上から現れるようになったはず！</li>
 </ul>
@@ -799,20 +810,23 @@
 <p>どういう意味か？</p>
 <ul>
 <li>
-<p>再掲
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>if (条件) {
+<p>再掲</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>if (条件) {
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    やりたい処理
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>}
-</code></pre></div></p>
+</code></pre></div>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>if (y &gt; 400) {
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    y = 0;
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>}
 </code></pre></div>
 </li>
 <li>
-<p>条件: <code>y &gt; 400</code>、つまりyが400より大きくなったら</p>
+<p>条件: <code>y &gt; 400</code>、つまり「yが400より大きいなら」</p>
+<ul>
+<li>「以上」ではなく「超過」、その値自身は含まないことに注意</li>
+</ul>
 </li>
-<li>処理: <code>y = 0</code>、つまりyを0にする</li>
+<li>処理: <code>y = 0</code>、つまり「yを0にする」</li>
 <li>まとめると……
     <strong>yが400より大きくなったら、yを0にする</strong> という意味</li>
 <li>400という数字は描画エリアの縦の高さ<ul>

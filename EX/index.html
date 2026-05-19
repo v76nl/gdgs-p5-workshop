@@ -1054,8 +1054,13 @@
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>}
 </code></pre></div>
 <h2 id="array-">Array(配列) - まとめる</h2>
-<p>x = [100, 200, 300]
-呼び出し: x[0]</p>
+<ul>
+<li><code>x = [100, 200, 300]</code></li>
+<li>呼び出し: <code>x[0]</code><ul>
+<li>プログラミングでは1番目のことを <code>[0]</code> で表す</li>
+</ul>
+</li>
+</ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="hll">let x = [100, 200, 300];
 </span><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>let y = 0;
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -1100,7 +1105,7 @@
 </li>
 <li>
 <p>例</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>for (let i = 0; i &lt; 3; i++) {
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>for (let i = 0; i &lt; 3; i = i + 1) {
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    circle(x[i], y, random(0, 50));
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>}
 </code></pre></div>
@@ -1131,6 +1136,12 @@
 </span><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="hll">    }
 </span><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>}
 </code></pre></div>
+<ul>
+<li>上の「Array」では <code>circle()</code> は3行書いていたが、1行で済んだ！<ul>
+<li>こうすると変更がしやすいプログラムになる</li>
+</ul>
+</li>
+</ul>
 <h2 id="hsb-rgb">HSB - RGBとは異なる色表現</h2>
 <ul>
 <li>HSB: Hue, Saturation, Brightness<ul>

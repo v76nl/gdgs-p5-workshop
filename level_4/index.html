@@ -751,14 +751,14 @@
 <li>変数を自分で作ってみる (定義)</li>
 </ul>
 </li>
-<li>一番上に 
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let x = 200;
+<li>
+<p>一番上に</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let x = 200;
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>let y = 200;
 </code></pre></div>
-     と書いてみる</li>
-<li>
-<p>circleの中の1つめ、2つめを<code>x, y</code>にしてみる 
-    ※変数の名前と同じ小文字である必要があるはず</p>
+<p>と書いてみる
+- circleの中の1つめ、2つめを<code>x, y</code>にしてみる
+※変数の名前と同じ小文字である必要があるはず</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="hll">let x = 200;
 </span><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="hll">let y = 200;
 </span><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
@@ -768,8 +768,8 @@
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>function draw() {
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  // background(220);
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  fill(255, 0, 0)
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  circle(x, y, random(0, 50))
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  fill(255, 0, 0);
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  circle(x, y, random(0, 50));
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>}
 </code></pre></div>
 <ul>
@@ -786,8 +786,9 @@
 <li>
 <p>それで、円をどう動かすの？</p>
 <ul>
-<li><code>y = 0</code> にしたあと、 <code>function draw() {</code> の下に <code>y = y + 3;</code> と書く
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let x = 200;
+<li>
+<p><code>y = 0</code> にしたあと、 <code>function draw() {</code> の下に <code>y = y + 3;</code> と書く</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let x = 200;
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="hll">let y = 0;
 </span><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>function setup() {
@@ -797,11 +798,14 @@
 <a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>function draw() {
 <a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="hll">    y = y + 3;
 </span><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    // background(220);
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    fill(255, 0, 0)
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    circle(x, y, random(0, 50))
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    fill(255, 0, 0);
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    circle(x, y, random(0, 50));
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>}
-</code></pre></div></li>
-<li>どうなっただろうか？<ul>
+</code></pre></div>
+</li>
+<li>
+<p>どうなっただろうか？</p>
+<ul>
 <li>円が勝手に下に行くはず</li>
 </ul>
 </li>
@@ -816,6 +820,7 @@
 <ul>
 <li>多くのプログラミング言語において、<code>=</code> は等しいことではなく「代入」を示す</li>
 <li>変数yという箱に対し、yの中身に3を足したものを入れなおす、ということ</li>
+<li><code>y += 3</code> とも書ける</li>
 </ul>
 </li>
 </ul>

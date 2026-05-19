@@ -842,12 +842,12 @@
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>function draw() {
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  // background(220);
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="hll">  circle(mouseX, mouseY, random(0, 50))
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="hll">  circle(mouseX, mouseY, random(0, 50));
 </span><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>}
 </code></pre></div>
-</li>
-<li>
-<p><code>random(0, 50)</code> は0から50までのランダムな数字を作る</p>
+<ul>
+<li><code>random(0, 50)</code> は0から50までのランダムな数字を作る</li>
+</ul>
 </li>
 </ul>
 <h2 id="_1">円の色を変えてみる</h2>
@@ -860,27 +860,25 @@
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>function draw() {
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  // background(220);
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="hll">  fill(255, 0, 0)
-</span><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  circle(mouseX, mouseY, random(0, 50))
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="hll">  fill(255, 0, 0);
+</span><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  circle(mouseX, mouseY, random(0, 50));
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>}
 </code></pre></div>
-</li>
-<li>
-<p>色が変わった！</p>
-</li>
+<ul>
+<li>色が変わった！</li>
 <li><code>fill()</code> はその名の通り、図形を指定した色でfillする (充填する) 命令</li>
 <li>
 <p>RGBについて</p>
 <ul>
 <li><code>fill()</code> の括弧の中は、基本的にRGBというルールで色を指定する</li>
-<li>
-<p>RGBとは光の三原色Red, Green, Blueのこと</p>
+<li>RGBとは光の三原色Red, Green, Blueのこと</li>
+</ul>
 <p><img alt="RGBのイメージ" src="../images/RGB.png" /></p>
-</li>
-<li>
-<p>それぞれの値は0~255</p>
-</li>
+<ul>
+<li>それぞれの値は0~255<ul>
 <li>白は(255, 255, 255)、黒は(0, 0, 0)</li>
+</ul>
+</li>
 <li>それぞれの値を組み合わせることで、約1680万色をディスプレイ上で表現できる</li>
 </ul>
 </li>
@@ -888,10 +886,12 @@
 <p>好きに色をいじってみよう</p>
 <ul>
 <li>p5.js、特にweb editorでは値をいじってみるのが良い<br />
-    致命的な破壊は(ほとんど)起こらない</li>
+致命的な破壊は(ほとんど)起こらない</li>
 </ul>
 </li>
 <li>なお、<code>background()</code> も同じ</li>
+</ul>
+</li>
 </ul>
 <h2 id="_2">ここで休憩</h2>
 <ul>
