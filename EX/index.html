@@ -1149,7 +1149,7 @@
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    }
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="hll">    background(220, 220, 220, 20);
 </span><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    fill(255, 0, 0)
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    circle(x, y, random(0, 50))
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    circle(mouseX, mouseY, 50)
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>}
 </code></pre></div>
 </li>
@@ -1352,30 +1352,29 @@
 <li>
 <p><a href="../level_1/">Level 1</a> の画像のプログラム<br />
 ここからでも → <a href="https://editor.p5js.org/v76nl/sketches/2BarazSA3">p5.js Web Editor | p5.js Lesson 2026 March</a></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>// 
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>let x = [100, 200, 300];
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>let y = 0;
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>function setup() {
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>createCanvas(400, 400);
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>}
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>function draw() {
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>y = y + 3;
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>if (y &gt; 400) {
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    y = 0;
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>}
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>background(0, 0, 0, 10);
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>fill(random(0, 255), 200, 200);
-<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>stroke(200, 100, 100);
-<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>strokeWeight(5)
-<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
-<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>for (let i = 0; i &lt; 3; i++){
-<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    circle(x[i], y, random(0, 50));
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>let x = [100, 200, 300];
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>let y = 0;
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>function setup() {
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>createCanvas(400, 400);
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>}
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>function draw() {
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>y = y + 3;
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>if (y &gt; 400) {
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    y = 0;
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>}
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>background(0, 0, 0, 10);
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>fill(random(0, 255), 200, 200);
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>stroke(200, 100, 100);
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>strokeWeight(5)
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>for (let i = 0; i &lt; 3; i++){
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>    circle(x[i], y, random(0, 50));
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>}
 <a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>}
-<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>}
 </code></pre></div>
 </li>
 </ul>
