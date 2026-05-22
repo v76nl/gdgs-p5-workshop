@@ -59,7 +59,7 @@
     - どうなっただろうか？
         - 円が勝手に下に行くはず
     - 最初はyが0だが、`draw()` が実行されるたびに +3 されていく
-        - 座標については [Level 1](https://v76nl.github.io/gdgs-p5-workshop/level_1/)、draw関数の仕組みについては [Level 2](https://v76nl.github.io/gdgs-p5-workshop/level_2/) を参照
+        - 座標については [Level 1](level_1.md)、draw関数の仕組みについては [Level 2](level_2.md) を参照
 
 - `y = y + 3` という式は気持ち悪い？
     - 多くのプログラミング言語において、`=` は等しいことではなく「代入」を示す

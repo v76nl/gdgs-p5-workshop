@@ -201,7 +201,7 @@ function draw() {
 
 ## おまけ
 
-- [Level 1](https://v76nl.github.io/gdgs-p5-workshop/level_0/) の画像のプログラム  
+- [Level 1](level_1.md) の画像のプログラム  
 ここからでも → [p5.js Web Editor | p5.js Lesson 2026 March](https://editor.p5js.org/v76nl/sketches/2BarazSA3)
 
 ```
