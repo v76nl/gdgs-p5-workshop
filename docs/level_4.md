@@ -6,7 +6,7 @@
     - 変数を自分で作ってみる (定義)
 - 一番上に
 
-    ```
+    ```p5.js
     let x = 200;
     let y = 200;
     ```
@@ -21,13 +21,13 @@
     let y = 200;
 
     function setup() {
-      createCanvas(400, 400);
+        createCanvas(400, 400);
     }
 
     function draw() {
-      // background(220);
-      fill(255, 0, 0);
-      circle(x, y, random(0, 50));
+        background(220);
+        fill(255, 0, 0);
+        circle(x, y, random(40, 50));
     }
     ```
 
@@ -50,9 +50,9 @@
 
         function draw() {
             y = y + 3;
-            // background(220);
+            background(220);
             fill(255, 0, 0);
-            circle(x, y, random(0, 50));
+            circle(x, y, random(40, 50));
         }
         ```
 

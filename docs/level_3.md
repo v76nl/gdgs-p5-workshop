@@ -4,12 +4,12 @@
 
     ```p5.js hl_lines="7"
     function setup() {
-      createCanvas(400, 400);
+        createCanvas(400, 400);
     }
 
     function draw() {
-      // background(220);
-      circle(mouseX, mouseY, random(0, 50));
+        background(220);
+        circle(mouseX, mouseY, random(0, 50));
     }
     ```
 
@@ -21,13 +21,13 @@
 
     ```p5.js hl_lines="7"
     function setup() {
-      createCanvas(400, 400);
+        createCanvas(400, 400);
     }
 
     function draw() {
-      // background(220);
-      fill(255, 0, 0);
-      circle(mouseX, mouseY, random(0, 50));
+        background(220);
+        fill(255, 0, 0);
+        circle(mouseX, mouseY, random(0, 50));
     }
     ```
 

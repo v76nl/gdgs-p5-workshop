@@ -44,7 +44,7 @@ nav:
     - Level 6 - 配列: level_6.md
     - Level 7 - for文: level_7.md
     - おわりに: outro.md
-    - EX - やる気と時間があれば: EX.md
+    - EX - 余裕があれば: EX.md
     - おまけ - 間違えやすいところ: ambiguous.md
 
 markdown_extensions:

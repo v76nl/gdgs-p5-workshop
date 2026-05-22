@@ -8,7 +8,7 @@
 
 - for文の書き方
 
-    ```
+    ```p5.js
     for (初期化式; 条件式; 変化式) {
         繰り返しやりたい処理
     }
@@ -21,7 +21,7 @@
 
     - 例
 
-        ```
+        ```p5.js
         for (let i = 0; i < 3; i = i + 1) {
             circle(x[i], y, random(0, 50));
         }
@@ -57,7 +57,7 @@
 - Level 6の「配列」では `circle()` は3行書いていたが、1行で済んだ！
     - Level 6
 
-        ```
+        ```p5.js
         circle(x[0], y, 50);
         circle(x[1], y, 50);
         circle(x[2], y, 50);
@@ -65,7 +65,7 @@
 
     - Level 7
 
-        ```
+        ```p5.js
         for (let i = 0; i < 3; i++) {
             circle(x[i], y, 50);
         }
