@@ -41,6 +41,8 @@ nav:
     - Level 3 - random関数とRGB: level_3.md
     - Level 4 - 変数: level_4.md
     - Level 5 - if文: level_5.md
+    - Level 6 - 配列: level_6.md
+    - Level 7 - for文: level_7.md
     - おわりに: outro.md
     - EX - やる気と時間があれば: EX.md
     - おまけ - 間違えやすいところ: ambiguous.md
