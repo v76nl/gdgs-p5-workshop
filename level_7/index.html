@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../level_7/">
+        <link rel="prev" href="../level_6/">
       
       
-        <link rel="next" href="../EX/">
+        <link rel="next" href="../outro/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>おわりに - p5.js workshop</title>
+        <title>Level 7 - for文 - p5.js workshop</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#level-7-for" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              おわりに
+              Level 7 - for文
             
           </span>
         </div>
@@ -378,9 +378,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../level_7/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -397,11 +399,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../outro/" class="md-tabs__link">
         
   
   
@@ -732,33 +732,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../level_7/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Level 7 - for文
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -778,7 +751,7 @@
   <span class="md-ellipsis">
     
   
-    おわりに
+    Level 7 - for文
   
 
     
@@ -788,6 +761,33 @@
 
       </a>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    おわりに
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -881,54 +881,90 @@
 
 
 
-<h1 id="_1">おわりに</h1>
+<h1 id="level-7-for">Level 7 - for文</h1>
 <ul>
-<li>どうでしたか？<ul>
-<li>楽しめた？</li>
-<li>簡単だった / 難しかった</li>
-</ul>
-</li>
-<li>p5.jsは、書いたプログラムが反映される様子がわかりやすく、プログラミング入門にぴったり</li>
-<li>Web Editorでアカウントを作成するとプログラムが保存できる</li>
-<li>OpenProcessing などのサイトで作品の例が見られる <strong>オススメ！</strong><br />
-<a href="https://openprocessing.org/discover/#/generativeart">Discover - OpenProcessing</a><ul>
-<li>作品のページを開き、上の <code>&lt;/&gt;</code> ボタンを押すと、作品がどのようなプログラムで作られているか見られる</li>
+<li>「配列」でcircleの描画を複数回行いやすくなったが、もし99個出したいなら99行書く必要があり、これは面倒<ul>
+<li>ここで「for文」の出番</li>
+<li>プログラミングでは「これは面倒だな、もっと別のやり方ないのかな」と思った場面では、だいたい何か賢いやり方がある</li>
 </ul>
 </li>
 <li>
-<p>ゲームも作れる</p>
+<p>for文: 指定した回数や、条件を満たしている間、処理を繰り返すことができる</p>
 <ul>
-<li>例  <ul>
-<li><a href="https://editor.p5js.org/_SIDDHU_/sketches/epGClQAh0">p5.js Web Editor | shooter</a></li>
-<li><a href="https://editor.p5js.org/k1628881@students.katyisd.org/sketches/aaTR4kTMJ">p5.js Web Editor | mario</a></li>
-<li><a href="https://openprocessing.org/@u435101/2211483">Slope Game - OpenProcessing</a></li>
-<li><a href="https://openprocessing.org/@u291853/1983803">(ALPHA) Arras.io BOSS RUSH! - OpenProcessing</a></li>
-<li><a href="https://openprocessing.org/@u117796/554613">different kind of platformer - OpenProcessing</a></li>
-<li><a href="https://openprocessing.org/@u67512/769137">Far East (shooter game) - OpenProcessing</a></li>
-</ul>
-</li>
-<li>ただしp5.jsはゲームを作るのに向いているわけではない</li>
+<li>「一定の規則で繰り返されるもの」はfor文で実装するのが良い</li>
 </ul>
 </li>
 <li>
-<p>p5.jsの公式サイトの "Reference" に使えるプログラムがすべて載っている<br />
-<a href="https://p5js.org/reference/">Reference</a>  </p>
+<p>for文の書き方</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>for (初期化式; 条件式; 変化式) {
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    繰り返しやりたい処理
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>}
+</code></pre></div>
 <ul>
-<li>「そんなことできるんだ！」という驚きがあるかも</li>
-</ul>
-</li>
 <li>
-<p><strong>ワークショップが終わった後も、自分でp5.jsを遊んでもらえたらとても嬉しい</strong></p>
+<p>初期化式・条件式・変化式</p>
 <ul>
-<li>この資料もそこそこ丁寧に作ったので、参考にしてもらえれば</li>
+<li>初期化式: ループを開始するときに1回だけ実行される</li>
+<li>条件式: 処理を繰り返すかどうかを判定する</li>
+<li>変化式: 処理が1回終わるたびに実行され、変数の値を更新する</li>
 </ul>
 </li>
 <li>
-<p>たとえばこれを作ってみよう</p>
-<p><img alt="課題" src="../images/homework.gif" /></p>
+<p>例</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>for (let i = 0; i &lt; 3; i = i + 1) {
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    circle(x[i], y, random(0, 50));
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>}
+</code></pre></div>
+<p><img alt="for文のイメージ" src="../images/for.png" /></p>
 </li>
 <li>
-<p>作りたいものを思いついたときに、それがどういう特徴か・どういうルールか、と考え、それをプログラムに落とし込んでいく</p>
+<p>難しいので、書くことで慣れていこう</p>
+</li>
+</ul>
+</li>
+<li>
+<p>for文を使って円を3つ出すプログラム</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let x = [100, 200, 300];
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>let y = 0;
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>function setup() {
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    createCanvas(400, 400);
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>}
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>function draw() {
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    y = y + 3;
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    if (y &gt; 400) {
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        y = 0;
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    }
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    background(220);
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    fill(255, 0, 0);
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="hll">    for (let i = 0; i &lt; 3; i++) {
+</span><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="hll">        circle(x[i], y, 50);
+</span><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="hll">    }
+</span><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>}
+</code></pre></div>
+</li>
+<li>
+<p>Level 6の「配列」では <code>circle()</code> は3行書いていたが、1行で済んだ！</p>
+<ul>
+<li>
+<p>Level 6</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>circle(x[0], y, 50);
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>circle(x[1], y, 50);
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>circle(x[2], y, 50);
+</code></pre></div>
+</li>
+<li>
+<p>Level 7</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>for (let i = 0; i &lt; 3; i++) {
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    circle(x[i], y, 50);
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>}
+</code></pre></div>
+</li>
+<li>
+<p>こうすると変更がしやすいプログラムになる</p>
+</li>
+</ul>
 </li>
 </ul>
 
@@ -966,7 +1002,7 @@
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../level_7/" class="md-footer__link md-footer__link--prev" aria-label="前: Level 7 - for文">
+          <a href="../level_6/" class="md-footer__link md-footer__link--prev" aria-label="前: Level 6 - 配列">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -976,20 +1012,20 @@
                 前
               </span>
               <div class="md-ellipsis">
-                Level 7 - for文
+                Level 6 - 配列
               </div>
             </div>
           </a>
         
         
           
-          <a href="../EX/" class="md-footer__link md-footer__link--next" aria-label="次: EX - やる気と時間があれば">
+          <a href="../outro/" class="md-footer__link md-footer__link--next" aria-label="次: おわりに">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                EX - やる気と時間があれば
+                おわりに
               </div>
             </div>
             <div class="md-footer__button md-icon">

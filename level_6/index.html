@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../level_7/">
+        <link rel="prev" href="../level_5/">
       
       
-        <link rel="next" href="../EX/">
+        <link rel="next" href="../level_7/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>おわりに - p5.js workshop</title>
+        <title>Level 6 - 配列 - p5.js workshop</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#level-6-" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              おわりに
+              Level 6 - 配列
             
           </span>
         </div>
@@ -359,9 +359,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../level_6/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -397,11 +399,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../outro/" class="md-tabs__link">
         
   
   
@@ -705,10 +705,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../level_6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -724,6 +733,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -759,19 +769,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../outro/" class="md-nav__link">
         
   
   
@@ -787,7 +788,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -881,54 +881,44 @@
 
 
 
-<h1 id="_1">おわりに</h1>
+<h1 id="level-6-">Level 6 - 配列</h1>
 <ul>
-<li>どうでしたか？<ul>
-<li>楽しめた？</li>
-<li>簡単だった / 難しかった</li>
+<li><a href="../level_4/">Level 4</a> で変数について学んだが、たくさんのデータを作って使いたいとき、データそれぞれに変数名を割り当てるのは面倒<ul>
+<li>「配列 (Array)」の出番</li>
 </ul>
 </li>
-<li>p5.jsは、書いたプログラムが反映される様子がわかりやすく、プログラミング入門にぴったり</li>
-<li>Web Editorでアカウントを作成するとプログラムが保存できる</li>
-<li>OpenProcessing などのサイトで作品の例が見られる <strong>オススメ！</strong><br />
-<a href="https://openprocessing.org/discover/#/generativeart">Discover - OpenProcessing</a><ul>
-<li>作品のページを開き、上の <code>&lt;/&gt;</code> ボタンを押すと、作品がどのようなプログラムで作られているか見られる</li>
+<li>配列の書き方<ul>
+<li><code>x = [100, 200, 300]</code></li>
+<li>3つの値を1つの変数に入れられる</li>
 </ul>
 </li>
 <li>
-<p>ゲームも作れる</p>
+<p>使い方(配列内の<strong>要素</strong>の呼び出し方): <code>x[0]</code> や <code>x[1]</code>など</p>
 <ul>
-<li>例  <ul>
-<li><a href="https://editor.p5js.org/_SIDDHU_/sketches/epGClQAh0">p5.js Web Editor | shooter</a></li>
-<li><a href="https://editor.p5js.org/k1628881@students.katyisd.org/sketches/aaTR4kTMJ">p5.js Web Editor | mario</a></li>
-<li><a href="https://openprocessing.org/@u435101/2211483">Slope Game - OpenProcessing</a></li>
-<li><a href="https://openprocessing.org/@u291853/1983803">(ALPHA) Arras.io BOSS RUSH! - OpenProcessing</a></li>
-<li><a href="https://openprocessing.org/@u117796/554613">different kind of platformer - OpenProcessing</a></li>
-<li><a href="https://openprocessing.org/@u67512/769137">Far East (shooter game) - OpenProcessing</a></li>
-</ul>
-</li>
-<li>ただしp5.jsはゲームを作るのに向いているわけではない</li>
+<li>プログラミングでは1番目のことを <code>[0]</code> で表す</li>
 </ul>
 </li>
 <li>
-<p>p5.jsの公式サイトの "Reference" に使えるプログラムがすべて載っている<br />
-<a href="https://p5js.org/reference/">Reference</a>  </p>
-<ul>
-<li>「そんなことできるんだ！」という驚きがあるかも</li>
-</ul>
-</li>
-<li>
-<p><strong>ワークショップが終わった後も、自分でp5.jsを遊んでもらえたらとても嬉しい</strong></p>
-<ul>
-<li>この資料もそこそこ丁寧に作ったので、参考にしてもらえれば</li>
-</ul>
-</li>
-<li>
-<p>たとえばこれを作ってみよう</p>
-<p><img alt="課題" src="../images/homework.gif" /></p>
-</li>
-<li>
-<p>作りたいものを思いついたときに、それがどういう特徴か・どういうルールか、と考え、それをプログラムに落とし込んでいく</p>
+<p>配列を使って円を3つ出すプログラム</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="hll">let x = [100, 200, 300];
+</span><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>let y = 0;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>function setup() {
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    createCanvas(400, 400);
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>}
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>function draw() {
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    y = y + 3;
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    if (y &gt; 400) {
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        y = 0;
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    }
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    background(220);
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    fill(255, 0, 0);
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="hll">    circle(x[0], y, 50);
+</span><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="hll">    circle(x[1], y, 50);
+</span><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="hll">    circle(x[2], y, 50);
+</span><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>}
+</code></pre></div>
 </li>
 </ul>
 
@@ -966,7 +956,7 @@
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../level_7/" class="md-footer__link md-footer__link--prev" aria-label="前: Level 7 - for文">
+          <a href="../level_5/" class="md-footer__link md-footer__link--prev" aria-label="前: Level 5 - if文">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -976,20 +966,20 @@
                 前
               </span>
               <div class="md-ellipsis">
-                Level 7 - for文
+                Level 5 - if文
               </div>
             </div>
           </a>
         
         
           
-          <a href="../EX/" class="md-footer__link md-footer__link--next" aria-label="次: EX - やる気と時間があれば">
+          <a href="../level_7/" class="md-footer__link md-footer__link--next" aria-label="次: Level 7 - for文">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                EX - やる気と時間があれば
+                Level 7 - for文
               </div>
             </div>
             <div class="md-footer__button md-icon">
