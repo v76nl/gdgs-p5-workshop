@@ -24,7 +24,7 @@
         }
         background(220, 220, 220, 20);
         fill(255, 0, 0)
-        circle(x, y, random(0, 50))
+        circle(mouseX, mouseY, 50)
     }
     ```
 
@@ -219,7 +219,6 @@
 ここからでも → [p5.js Web Editor | p5.js Lesson 2026 March](https://editor.p5js.org/v76nl/sketches/2BarazSA3)
 
     ```p5.js
-    // 
     let x = [100, 200, 300];
     let y = 0;
 
