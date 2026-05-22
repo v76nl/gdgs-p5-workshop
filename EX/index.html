@@ -23,7 +23,7 @@
     
     
       
-        <title>EX - やる気と時間があれば - p5.js workshop</title>
+        <title>EX - 余裕があれば - p5.js workshop</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EX - やる気と時間があれば
+              EX - 余裕があれば
             
           </span>
         </div>
@@ -426,7 +426,7 @@
   
     
   
-  EX - やる気と時間があれば
+  EX - 余裕があれば
 
       </a>
     </li>
@@ -805,7 +805,7 @@
   <span class="md-ellipsis">
     
   
-    EX - やる気と時間があれば
+    EX - 余裕があれば
   
 
     
@@ -823,7 +823,7 @@
   <span class="md-ellipsis">
     
   
-    EX - やる気と時間があれば
+    EX - 余裕があれば
   
 
     
@@ -849,10 +849,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alpha" class="md-nav__link">
+  <a href="#alpha-" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alpha(透明度)
+        Alpha - 透明度
       
     </span>
   </a>
@@ -893,10 +893,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#text" class="md-nav__link">
     <span class="md-ellipsis">
       
-        テキスト
+        text
       
     </span>
   </a>
@@ -937,7 +937,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         おまけ
@@ -1009,10 +1009,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#alpha" class="md-nav__link">
+  <a href="#alpha-" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Alpha(透明度)
+        Alpha - 透明度
       
     </span>
   </a>
@@ -1053,10 +1053,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#text" class="md-nav__link">
     <span class="md-ellipsis">
       
-        テキスト
+        text
       
     </span>
   </a>
@@ -1097,7 +1097,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         おまけ
@@ -1125,12 +1125,15 @@
 
 
 <h1 id="ex-">EX - 余裕があれば</h1>
-<h2 id="alpha">Alpha(透明度)</h2>
+<h2 id="alpha-">Alpha - 透明度</h2>
 <ul>
 <li>色を指定するとき4番目に値を入力すると、それは透明度と解釈される</li>
 <li>例： <code>background(220, 220, 220, 20)</code></li>
-<li>範囲は0~255で、0が完全な透明、255が完全な不透明</li>
-</ul>
+<li>
+<p>範囲は0~255で、0が完全な透明、255が完全な不透明</p>
+</li>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let x = 200;
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>let y = 0;
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -1149,6 +1152,8 @@
 <a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    circle(x, y, random(0, 50))
 <a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>}
 </code></pre></div>
+</li>
+</ul>
 <h2 id="hsb-rgb">HSB - RGBとは異なる色表現</h2>
 <ul>
 <li>HSB: Hue, Saturation, Brightness<ul>
@@ -1167,7 +1172,8 @@
 <li>HSBにするとRGBは使えなくなるので注意</li>
 </ul>
 </li>
-</ul>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>let frames = 0;
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>function setup() {
@@ -1188,6 +1194,8 @@
 <a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    }
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>}
 </code></pre></div>
+</li>
+</ul>
 <h2 id="mouseclicked-">mouseClicked - マウスクリックに反応</h2>
 <ul>
 <li>
@@ -1197,7 +1205,8 @@
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>}
 </code></pre></div>
 </li>
-</ul>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>let fill_color = 0;
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>function setup() {
@@ -1215,15 +1224,20 @@
 <a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    fill_color = 255;
 <a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>}
 </code></pre></div>
-<ul>
-<li>マウスクリックを離したり、再度クリックしたときにも色が変わるようにしてみよう</li>
+</li>
+<li>
+<p>マウスクリックを離したり、再度クリックしたときにも色が変わるようにしてみよう</p>
+</li>
 </ul>
 <h2 id="stroke">Stroke</h2>
 <ul>
 <li><code>stroke()</code> で図形の輪郭線の色を変えられる</li>
 <li><code>strokeWeight()</code> で図形の輪郭線の太さを変えられる</li>
-<li>図形を描画するより前の処理に書く必要がある</li>
-</ul>
+<li>
+<p>図形を描画するより前の処理に書く必要がある</p>
+</li>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="hll">let stroke_weight = 10;
 </span><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>let is_reversed = 1
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
@@ -1238,22 +1252,27 @@
 </span><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
 <a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    stroke_weight = stroke_weight + 0.2 * is_reversed
 <a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    if (stroke_weight &gt; 20) {
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>      is_reversed = is_reversed * -1;
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    is_reversed = is_reversed * -1;
 <a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    }
 <a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    if (stroke_weight &lt; 10){
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>      is_reversed = is_reversed * -1;
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    is_reversed = is_reversed * -1;
 <a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    }
 <a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
 <a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="hll">    strokeWeight(stroke_weight);
 </span><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>    circle(200, 200, 80);
 <a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>}
 </code></pre></div>
-<h2 id="_1">テキスト</h2>
+</li>
+</ul>
+<h2 id="text">text</h2>
 <ul>
 <li><code>text("文字", x座標, y座標)</code> で文字を表示できる<br />
 <code>text("GDGoC Chuo", 20, 200);</code></li>
-<li><code>textSize(数字)</code> を <code>text()</code> より前に行うことで大きさを変えられる</li>
-</ul>
+<li>
+<p><code>textSize(数字)</code> を <code>text()</code> より前に行うことで大きさを変えられる</p>
+</li>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>function setup() {
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    createCanvas(400, 400);
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    background(220);
@@ -1264,10 +1283,15 @@
 <a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    text(&quot;GDGoC Chuo&quot;, 20, 200);
 <a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>}
 </code></pre></div>
+</li>
+</ul>
 <h2 id="noise-random">noise - randomとは異なる柔らかなランダム性</h2>
 <ul>
-<li>詳細割愛 (難しいため)</li>
-</ul>
+<li>
+<p>詳細割愛 (使うのは簡単だが説明が難しいため)</p>
+</li>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>let frames = 0;
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>let x = 0;
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
@@ -1293,12 +1317,17 @@
 <a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>    }
 <a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>}
 </code></pre></div>
+</li>
+</ul>
 <h2 id="webgl-3d">WEBGL - 3D表現</h2>
 <ul>
 <li><code>createCanvas()</code> の中の3番目の値に <code>WEBGL</code> と入れると、3Dモードになる</li>
-<li>例
-    <code>createCanvas(400, 400, WEBGL);</code></li>
-</ul>
+<li>
+<p>例
+    <code>createCanvas(400, 400, WEBGL);</code></p>
+</li>
+<li>
+<p>プログラム例</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>function setup() {
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    createCanvas(400, 400, WEBGL);
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    orbitControl();
@@ -1312,40 +1341,44 @@
 <a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    box(100);
 <a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>}
 </code></pre></div>
+</li>
+</ul>
 <h2 id="object">Object</h2>
 <ul>
 <li>詳細割愛 (難しいため)</li>
 </ul>
-<h2 id="_2">おまけ</h2>
+<h2 id="_1">おまけ</h2>
 <ul>
-<li><a href="../level_1/">Level 1</a> の画像のプログラム<br />
-ここからでも → <a href="https://editor.p5js.org/v76nl/sketches/2BarazSA3">p5.js Web Editor | p5.js Lesson 2026 March</a></li>
-</ul>
+<li>
+<p><a href="../level_1/">Level 1</a> の画像のプログラム<br />
+ここからでも → <a href="https://editor.p5js.org/v76nl/sketches/2BarazSA3">p5.js Web Editor | p5.js Lesson 2026 March</a></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>// 
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>let x = [100, 200, 300];
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>let y = 0;
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
 <a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>function setup() {
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  createCanvas(400, 400);
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>createCanvas(400, 400);
 <a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>}
 <a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
 <a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>function draw() {
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>  y = y + 3;
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>y = y + 3;
 <a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>  if (y &gt; 400) {
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>if (y &gt; 400) {
 <a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    y = 0;
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>  }
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>}
 <a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>  background(0, 0, 0, 10);
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>  fill(random(0, 255), 200, 200);
-<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>  stroke(200, 100, 100);
-<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>  strokeWeight(5)
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>background(0, 0, 0, 10);
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>fill(random(0, 255), 200, 200);
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>stroke(200, 100, 100);
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>strokeWeight(5)
 <a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
-<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>  for (let i = 0; i &lt; 3; i++){
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>for (let i = 0; i &lt; 3; i++){
 <a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    circle(x[i], y, random(0, 50));
-<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>  }
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>}
 <a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>}
 </code></pre></div>
+</li>
+</ul>
 
 
 
