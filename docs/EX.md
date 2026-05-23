@@ -1,5 +1,7 @@
 # EX - 余裕があれば
 
+ワークショップ内でやる時間がなかったり難しかったりして省いたが、知っておくと楽しい表現
+
 ## Alpha - 透明度
 
 - 色を指定するとき4番目に値を入力すると、それは透明度と解釈される
@@ -122,10 +124,10 @@
         
         stroke_weight = stroke_weight + 0.2 * is_reversed
         if (stroke_weight > 20) {
-        is_reversed = is_reversed * -1;
+            is_reversed = is_reversed * -1;
         }
         if (stroke_weight < 10){
-        is_reversed = is_reversed * -1;
+            is_reversed = is_reversed * -1;
         }
     
         strokeWeight(stroke_weight);
@@ -223,23 +225,23 @@
     let y = 0;
 
     function setup() {
-    createCanvas(400, 400);
+        createCanvas(400, 400);
     }
 
     function draw() {
-    y = y + 3;
-    
-    if (y > 400) {
-        y = 0;
-    }
-    
-    background(0, 0, 0, 10);
-    fill(random(0, 255), 200, 200);
-    stroke(200, 100, 100);
-    strokeWeight(5)
-    
-    for (let i = 0; i < 3; i++){
-        circle(x[i], y, random(0, 50));
-    }
+        y = y + 3;
+        
+        if (y > 400) {
+            y = 0;
+        }
+        
+        background(0, 0, 0, 10);
+        fill(random(0, 255), 200, 200);
+        stroke(200, 100, 100);
+        strokeWeight(5)
+        
+        for (let i = 0; i < 3; i++){
+            circle(x[i], y, random(0, 50));
+        }
     }
     ```
