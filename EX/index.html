@@ -1125,6 +1125,7 @@
 
 
 <h1 id="ex-">EX - 余裕があれば</h1>
+<p>ワークショップ内でやる時間がなかったり難しかったりして省いたが、知っておくと楽しい表現</p>
 <h2 id="alpha-">Alpha - 透明度</h2>
 <ul>
 <li>色を指定するとき4番目に値を入力すると、それは透明度と解釈される</li>
@@ -1252,10 +1253,10 @@
 </span><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
 <a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    stroke_weight = stroke_weight + 0.2 * is_reversed
 <a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    if (stroke_weight &gt; 20) {
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    is_reversed = is_reversed * -1;
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>        is_reversed = is_reversed * -1;
 <a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    }
 <a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    if (stroke_weight &lt; 10){
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    is_reversed = is_reversed * -1;
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>        is_reversed = is_reversed * -1;
 <a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    }
 <a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
 <a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="hll">    strokeWeight(stroke_weight);
@@ -1356,24 +1357,24 @@
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>let y = 0;
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>function setup() {
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>createCanvas(400, 400);
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    createCanvas(400, 400);
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>}
 <a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
 <a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>function draw() {
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>y = y + 3;
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    y = y + 3;
 <a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>if (y &gt; 400) {
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>    y = 0;
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>}
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    if (y &gt; 400) {
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        y = 0;
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    }
 <a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>background(0, 0, 0, 10);
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>fill(random(0, 255), 200, 200);
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>stroke(200, 100, 100);
-<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>strokeWeight(5)
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>    background(0, 0, 0, 10);
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    fill(random(0, 255), 200, 200);
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>    stroke(200, 100, 100);
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>    strokeWeight(5)
 <a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>
-<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>for (let i = 0; i &lt; 3; i++){
-<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>    circle(x[i], y, random(0, 50));
-<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>}
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>    for (let i = 0; i &lt; 3; i++){
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>        circle(x[i], y, random(0, 50));
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    }
 <a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>}
 </code></pre></div>
 </li>
